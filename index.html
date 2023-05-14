@@ -1,0 +1,219 @@
+
+<!-- thẻ doctype giúp khai báo biên bản HTML cho trinhf duyệt-->
+
+<!DOCTYPE html>
+<!-- ! or dùng html:5 -->
+<html lang="en">
+  <head>
+    <!--thẻ head giúp cung cap thông tin cho trình duyệt -->
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- thẻ meta giúp cung cấp 1 số thông tin cơ bản của trang web cho trình duyệt
+giúp hỗ trợ về SEO ( lượttìm kiếm trang web) --> 
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- thẻ tiêu đề: thẻ heading -->
+    <!-- ngoài ra cũng có 1 số thẻ tiêu đề h1-h6 -->
+    <!-- một trang web chỉ có duy nhất 1 thẻ tiêu đề h1 -->
+    <!-- thuộc tính style: thuộc tính style giúp chúng ta thay đổi về 1 số giao diện của thẻ HTML -->
+    <!-- bên trong thuộc tính style , chúng ta sẽ truyền 1 cặp thuộc tính và gia strij chúng ta muốn chinhr sửa -->
+    <!-- khi muốn thay đổi màu nền , dùng background-color: red; -->
+    <!-- khi muốn thay đổi màu chữ, dùng color: -->
+    <!-- text-align: center, left , right -->
+    <h1 style="background-color: #3b4a59; color: white; text-align: center">
+      Cybersoft Cafe
+    </h1>
+
+    <!-- thẻ liên kết -->
+    <!-- thuộc tinh href: nhận vào 1 đường dẫn tới trang mà bạn mong muốn -->
+    <!-- thuộc tính target: nhận vào gia strij là blank để tạo ra 1 tab mới khi nhấn vào thẻ liên kết -->
+    <!-- thẻ chia ra làm 2 loại: thẻ block, inline -->
+    <!-- target : blank để mở ra 1 trang khác -->
+    <a href="https://tiki.vn/nha-sach-tiki/c8322" target="_blank"
+      >Đi tới trang tiki</a
+    >
+    <a href="https://login.cybersoft.edu.vn/course-detail/329" target="_blank"
+      >Home</a
+    >
+    <a href="https://tiki.vn/sach-truyen-tieng-viet/c316" target="_blank"
+      >Menu</a
+    >
+    <a href="https://tiki.vn/nong-lam-ngu-nghiep/c882" target="_blank">Order</a>
+
+    <!-- thẻ hr là thẻ khuyết-->
+    <!-- thuộc tính size: giúp tăng chiều cao của thẻ hr -->
+    <!-- thuộc tính width: giúp tăng chiêù dài thẻ hr -->
+    <!-- thẻ br giúp xuống dòng đoạn văn bản -->
+    <!-- thẻ b giúp bôi đậm đoạn văn bản -->
+    <hr size="8px" width="50%" style="background-color: gray" />
+    <h2 style="background-color: white; color: #986638; text-align: center">
+      About our cafe
+    </h2>
+    <p style="text-align: right">
+      Lorem ipsum dolor sit <br />
+      amet consectetur adipisicing elit. Sint corrupti harum cupiditate alias!
+      Non numquam suscipit ut cupiditate <br />
+      fuga nobis eveniet <br />
+      nihil dolorum, exercitationem,
+      <b>reprehenderit possimus id! Illum dolorem sed</b> tenetur quod quam
+      iusto <br />
+      distinctio aperiam id! Commodi rerum nulla reiciendis, consectetur placeat
+      vel, doloribus quaerat minima eos, quae nesciunt?
+    </p>
+    <hr size="8px" width="50%" style="background-color: gray" />
+    <h2 style="background-color: white; color: #986638; text-align: center">
+      Special Items
+    </h2>
+    <h3>The coffee list 1</h3>
+    <!-- thẻ danh sáh ko có thứ tự: ul đi kèm vs li -->
+    <!-- thuộc tính giá trị type: circle, square, dics: dấu chấm tròn đen -->
+
+    <ul type="circle" style="color: blue">
+      <li>Black coffee</li>
+      <li>pink coffee</li>
+      <li>Green</li>
+    </ul>
+    <!-- đường dẫn tương đối -->
+    <!-- đường dẫn tương đối có cấu trúc bằng ./ là xác định vị trí file của chúng ta bắt đầu, mỗi khi muốn đi vào 1 thư mục sẽ gọi ra thư mục đó ./ -->
+    <!-- thuộc tính alt , giúp cho các bạn hiẻn thị thôg tin của tấm hình cho trình duyệt -->
+
+    <!-- thuộc tính width và height -->
+    <!-- lưu ý khi dùng width và height , chúng ta sẽ chọn 1 trong 2 để sử dụng, vì sẽ làm hình bể kích thước -->
+    <img src="./img/chilling-cafe-01.jpg" alt="ly cà phê" height="500px" />
+    <!-- <img src="./img/chilling-cafe-13.jpg" alt="" /> -->
+    <!-- khi nằm trong thư mucj con muốn thoát ra khoir thư mcuj cha ta ghi đường dẫn nằm trong bằng cú pháp ../.mỗi làn ../ sẽ nảy ra 1 cấp thư mục -->
+
+    <img
+      src="https://cdn.tgdd.vn/Files/2022/08/02/1452630/y-nghia-hinh-anh-hoa-hong-trang-cach-trong-chi-tiet-tai-nha-202208021110521193.jpg"
+      alt=""
+    />
+    <img src="./img/chilling-cafe-13.jpg" alt="" />
+    <img src="./img/chilling-cafe-12.jpg" alt="" />
+    <h3>The coffee list 2</h3>
+    <!-- thẻ danh sách có thứ tự -->
+    <!-- shift+ option+ mũi tên đi xuống -->
+    <!-- thuộc tính type: -->
+    <!-- thuộc tính type : nhận vào 1 số giá trị, gia strij 1 sẽ chạy danh sách theo số tự nhiên, A: chạy nhanh theo bảng chữ cái, , i thường giống i la mã thường, I giống la mã in hoa -->
+    <!-- thuộc tính start giúp xác định số đầu tiên mà phần tử 1 sẽ chạy -->
+    <!-- thuộc tính reversed giúp đaỏ ngược lại chiều chạy của thẻ danh sách thay vì tăng dần lên thì sẽ giảm dần -->
+    <ol type="1" start="20" reversed="">
+      <li>Soft deli cup</li>
+      <li>Coffee art</li>
+      <li>Speciality tea</li>
+      <li>Speciality tea</li>
+      <li>Speciality tea</li>
+      <li>Speciality tea</li>
+    </ol>
+    <img src="./img/chilling-cafe-13.jpg" alt="" />
+    <hr />
+    <h2 style="background-color: white; color: #986638; text-align: center">
+      Menu
+    </h2>
+
+    <!-- thẻ table -->
+    <!-- thẻ tr giúp tạo ra dòng trong bảng -->
+    <!-- thẻ td giúp tạo ra các cột bên trong bảng -->
+    <!-- thuộc tính border: tạo đường viền cho bảng  -->
+    <!-- thuộc tính cellspacing : giúp tạo khoảng cách giữa các cột và các dòng -->
+    <!-- thuộc tính cellpadding: giúp ta taoj ra khoảng cách từ phần đường viền đi vào bên trong phần nội dung -->
+    <!-- thuộc tính colspan: thuộc tính colspan nhận vô gia strij số cột là chunsg ta muốn hợp nhất
+thuộc tính rowspan: gôm dòng -->
+    <!-- thuộc tính align giúp canh chỉnh bảng: có 3 gia strij: left, right, center -->
+
+    <table
+      border="2px"
+      cellspacing="0"
+      cellpadding="20px"
+      style="text-align: center; width: 800px"
+      align="center"
+    >
+      <!-- dòng   1-->
+      <!-- cột 1 -->
+      <tr style="background-color: #c4cdd6; font-weight: bold">
+        <td colspan="2">Name</td>
+        <td>Type</td>
+        <td>Price</td>
+      </tr>
+      <!-- dòng 2 -->
+      <tr>
+        <!-- thuộc tính giúp tạo ra hình nền -->
+        <td
+          rowspan="4"
+          style="
+            background-image: url(./img/chilling-cafe-13.jpg);
+            color: white;
+          "
+        >
+          Traditional coffe
+        </td>
+        <td rowspan="2">Vietnamese coffe bin</td>
+        <td>hot</td>
+        <td>60.000</td>
+      </tr>
+      <!-- dòng 3 -->
+      <tr>
+        <td>Cold</td>
+        <td>28.000</td>
+      </tr>
+      <!-- dòng 4 -->
+      <tr>
+        <td rowspan="2">Milk coffee</td>
+        <td>Hot</td>
+        <td>38.000</td>
+      </tr>
+      <!-- dong 5 -->
+      <tr>
+        <td>Cold</td>
+        <td>54.000</td>
+      </tr>
+      <!-- dòng 6 -->
+      <tr>
+        <td
+          rowspan="3"
+          style="
+            background-image: url(./img/chilling-cafe-11.jpg);
+            color: white;
+          "
+        >
+          Expresso
+        </td>
+        <td>American coffee</td>
+        <td rowspan="3">Hot</td>
+        <td>110.000</td>
+      </tr>
+      <!-- dòng 7 -->
+      <tr>
+        <td>Machiato</td>
+        <td rowspan="2">40.000</td>
+      </tr>
+      <!-- dòng 8 -->
+      <tr>
+        <td>Capuchino</td>
+      </tr>
+    </table>
+
+    <hr />
+    <h2 style="background-color: white; color: #986638; text-align: center">
+      Talk to us
+    </h2>
+    <!-- ngoài đường dẫn tơi strang web truyền vô href, chúng ta còn có thể truyền vào href các từ khoá mailto or tel -->
+  <p style="text-align: center;">
+    Reach us via 
+    <b>Email:<a href="mailto:Cybercafe@gmail.com">Cybercafe@gmail.com</a></b>
+  or
+  <b>Hotline: <a href="tel:0961051014">0961051014</a></b>
+  .Thankyou
+  
+  </p>
+  
+  
+  </body>
+</html>
+
+
+
+
+
